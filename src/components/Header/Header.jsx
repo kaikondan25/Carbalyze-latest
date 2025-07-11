@@ -18,7 +18,8 @@ function Header() {
                   to="/products"
                   className={({ isActive }) =>
                     isActive ? styles.active : undefined
-                  }>
+                  }
+                >
                   Products
                 </NavLink>
               </li>
@@ -44,12 +45,12 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/company"
+                  to="/AboutUs"
                   className={({ isActive }) =>
                     isActive ? styles.active : undefined
                   }
                 >
-                  Company
+                  AboutUs
                 </NavLink>
               </li>
               <li>

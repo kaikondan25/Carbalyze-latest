@@ -8,12 +8,10 @@ import ParticleBackground from "./components/Particles/Particles";
 import Products from "./pages/Product/Products";
 import Pricing from "./pages/Pricing/Pricing";
 import Resources from "./pages/Resources";
-import Company from "./pages/Company";
+import AboutUs from "./pages/AboutUs";
 import BookDemo from "./pages/BookDemo";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Router>
@@ -22,7 +20,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/company" element={<Company />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/book-demo" element={<BookDemo />} />
           <Route
             path="/"

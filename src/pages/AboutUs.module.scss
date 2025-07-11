@@ -1,0 +1,69 @@
+.AboutUsPage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.hero {
+  background: linear-gradient(90deg, #e0f7fa 0%, #fff 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #009688;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.innovation,
+.whyChoose,
+.vision,
+.faq {
+  margin-bottom: 2rem;
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+}
+
+.innovation h2,
+.whyChoose h2,
+.vision h2,
+.faq h2 {
+  font-size: 1.5rem;
+  color: #009688;
+  margin-bottom: 0.75rem;
+}
+
+.innovation p,
+.vision p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.whyChoose ul,
+.faq ul {
+  padding-left: 1.2rem;
+}
+
+.whyChoose li,
+.faq li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.faq strong {
+  color: #009688;
+}

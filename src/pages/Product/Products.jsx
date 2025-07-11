@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Products.module.scss";
 import foot from "../../assets/images/img-footprint.png";
 import {
@@ -10,7 +9,6 @@ import {
 } from "react-icons/fa";
 import master from "../../assets/images/img-master.png";
 import { FaPlug, FaChartLine } from "react-icons/fa";
-import { title } from "motion/react-client";
 
 function Products() {
   const features = [
