@@ -19,7 +19,7 @@
       font-weight: 700;
       margin-bottom: 10px;
 
-      img{
+      img {
         width: 120px;
         height: 30px;
       }
@@ -52,7 +52,9 @@
 
   .linkSection {
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
+    width: 500px;
+    max-width: 100%;
 
     h4 {
       margin-bottom: 10px;

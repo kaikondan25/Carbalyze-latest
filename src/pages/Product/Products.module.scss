@@ -157,7 +157,6 @@
   }
 }
 
-
 .features {
   display: flex;
   justify-content: center;
@@ -176,7 +175,7 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     display: block;
-    
+
     &:hover {
       transform: translateY(-5px);
     }
@@ -214,7 +213,6 @@
     }
   }
 }
-
 
 .smeSection {
   display: flex;
@@ -275,3 +273,126 @@
   min-width: 300px;
 }
 
+// Responsive styles for Products.module.scss
+@media (max-width: 1200px) {
+  .footprint .carbon {
+    flex-direction: column;
+    align-items: center;
+    .cartext {
+      padding: 40px 20px;
+    }
+    .footpic img {
+      width: 80vw;
+      max-width: 400px;
+    }
+  }
+  .master {
+    padding: 32px 10px;
+    .piechart {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 90vw;
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    gap: 1rem;
+    .card {
+      max-width: 100%;
+      padding: 1.2rem;
+    }
+  }
+  .smeSection {
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+    gap: 1rem;
+    .graphicBox {
+      min-width: 0;
+      min-height: 180px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.2rem 0.3rem;
+    border-radius: 8px;
+  }
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .grid {
+    gap: 0.7rem;
+  }
+  .card,
+  .features .card {
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .number {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    top: -0.7rem;
+    left: -0.7rem;
+  }
+  .content {
+    margin-left: 1.2rem;
+  }
+  .master {
+    padding: 16px 2px;
+
+    h2 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 0.95rem;
+    }
+  }
+  .piechart img {
+    width: 98vw;
+    max-width: 220px;
+  }
+}
+
+// Responsive for Product Updates section
+@media (max-width: 900px) {
+  .updatesGrid {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .updatesGrid {
+    gap: 0.7rem;
+  }
+  .updatesGrid .card {
+    min-width: 0;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 0.7rem;
+  }
+  .updatesGrid .card h2 {
+    font-size: 1.1rem;
+    padding: 1.2rem 1.2rem 0.5rem 1.2rem;
+    border-radius: 10px 10px 0 0;
+  }
+  .btnbok {
+    margin-left: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  .updatesGrid .card ul {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+  }
+}

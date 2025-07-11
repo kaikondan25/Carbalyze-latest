@@ -37,57 +37,66 @@ function Content() {
     <>
       <section className={styles.caly}>
         <h2 className={styles.maktext}>What Makes Caly Different?</h2>
-        <div className={styles.flipcard}>
-          <div className={styles.flipcardinner}>
-            <div className={styles.flipcardfront}>
-              <img src={ai} alt="..." />
-              <h2>Fast, AI-Powered PCF Estimates</h2>
-              <p className={styles.tintext}>
-                No more waiting weeks — Caly gets you results in minutes.
-              </p>
-            </div>
-            <div className={styles.flipcardback}>
-              <h2>Back Side</h2>
-              <p>More info here</p>
-            </div>
-          </div>
-          <div className={styles.flipcardinner}>
-            <div className={styles.flipcardfront}>
-              <img src={expert} alt="..." />
-              <h2>Built for Non-LCA Experts</h2>
-              <p className={styles.tectext}>
-                No technical background needed. Caly speaks your language.
-              </p>
-            </div>
-            <div className={styles.flipcardback}>
-              <h2>Back Side</h2>
-              <p>More info here</p>
+        <div className={styles.flipcardGrid}>
+          <div className={styles.flipcard}>
+            <div className={styles.flipcardinner}>
+              <div className={styles.flipcardfront}>
+                <img src={ai} alt="..." />
+                <h2>Fast, AI-Powered PCF Estimates</h2>
+                <p className={styles.tintext}>
+                  No more waiting weeks — Caly gets you results in minutes.
+                </p>
+              </div>
+              <div className={styles.flipcardback}>
+                <h2>Back Side</h2>
+                <p>More info here</p>
+              </div>
             </div>
           </div>
-          <div className={styles.flipcardinner}>
-            <div className={styles.flipcardfront}>
-              <img src={supplier} alt="..." />
-              <h2>Supplier-Friendly Workflow</h2>
-              <p className={styles.eastext}>
-                Easily collect and verify Scope 3 data from your value chain.
-              </p>
-            </div>
-            <div className={styles.flipcardback}>
-              <h2>Back Side</h2>
-              <p>More info here</p>
+          <div className={styles.flipcard}>
+            <div className={styles.flipcardinner}>
+              <div className={styles.flipcardfront}>
+                <img src={expert} alt="..." />
+                <h2>Built for Non-LCA Experts</h2>
+                <p className={styles.tectext}>
+                  No technical background needed. Caly speaks your language.
+                </p>
+              </div>
+              <div className={styles.flipcardback}>
+                <h2>Back Side</h2>
+                <p>More info here</p>
+              </div>
             </div>
           </div>
-          <div className={styles.flipcardinner}>
-            <div className={styles.flipcardfront}>
-              <img src={action} alt="..." />
-              <h2>Actionable Sustainability Intelligence</h2>
-              <p>
-                Beyond carbon scores — Caly recommends ways to reduce emissions.
-              </p>
+          <div className={styles.flipcard}>
+            <div className={styles.flipcardinner}>
+              <div className={styles.flipcardfront}>
+                <img src={supplier} alt="..." />
+                <h2>Supplier-Friendly Workflow</h2>
+                <p className={styles.eastext}>
+                  Easily collect and verify Scope 3 data from your value chain.
+                </p>
+              </div>
+              <div className={styles.flipcardback}>
+                <h2>Back Side</h2>
+                <p>More info here</p>
+              </div>
             </div>
-            <div className={styles.flipcardback}>
-              <h2>Back Side</h2>
-              <p>More info here</p>
+          </div>
+          <div className={styles.flipcard}>
+            <div className={styles.flipcardinner}>
+              <div className={styles.flipcardfront}>
+                <img src={action} alt="..." />
+                <h2>Actionable Sustainability Intelligence</h2>
+                <p>
+                  Beyond carbon scores — Caly recommends ways to reduce
+                  emissions.
+                </p>
+              </div>
+              <div className={styles.flipcardback}>
+                <h2>Back Side</h2>
+                <p>More info here</p>
+              </div>
             </div>
           </div>
         </div>
