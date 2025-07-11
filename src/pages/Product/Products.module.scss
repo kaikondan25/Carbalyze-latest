@@ -1,0 +1,277 @@
+.footprint {
+  margin-top: 150px;
+  .carbon {
+    display: flex;
+
+    h4 {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 30px;
+      font-weight: 700;
+      color: #007c56;
+    }
+    .godtext {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 18px;
+      font-weight: 400;
+      color: #171717;
+    }
+
+    .cartext {
+      padding: 80px;
+    }
+    .btnbok {
+      margin-top: 50px;
+      a {
+        background: #007c56;
+        padding: 16px 46px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #ffff;
+      }
+    }
+  }
+}
+
+.container {
+  background: linear-gradient(to right, #e5f4ef, #cce8e0);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #0a3d3f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: #e5f4ef;
+  border: 1px solid #b2dcd4;
+  border-radius: 12px;
+  position: relative;
+  gap: 1rem;
+  text-align: left;
+}
+
+.number {
+  background-color: #00664f;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+.content {
+  margin-left: 2.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #004c3f;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #334e4d;
+}
+
+.master {
+  background: #f8f1e9;
+  padding: 64px 96px;
+
+  h2 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  p {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 785px;
+    margin: auto;
+  }
+  .piechart {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+    img {
+      width: 500px;
+    }
+
+    .pietwo {
+      h6 {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+
+      .load {
+        .cardass {
+          .content {
+            margin-left: 0;
+            margin-bottom: 20px;
+
+            .title {
+              gap: 15px;
+            }
+            .description {
+              font-family: "Manufacturing Consent", system-ui;
+              font-size: 18px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  background-color: #f5f6f9;
+
+  .card {
+    background-color: #2d2e49;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: block;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 2rem;
+      color: #00ffae;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+        position: relative;
+        padding-left: 1.2rem;
+
+        &::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: #00ffae;
+        }
+      }
+    }
+  }
+}
+
+
+.smeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9fdfc;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.textContent {
+  flex: 1;
+  min-width: 300px;
+
+  h2 {
+    font-size: 1.75rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #4b5563;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  gap: 1rem;
+
+  p {
+    margin: 0;
+    color: #374151;
+  }
+}
+
+.icon {
+  color: #22c55e;
+  font-size: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+.graphicBox {
+  flex: 1;
+  min-height: 305px;
+  background-color: #d1fae5;
+  border-radius: 12px;
+  min-width: 300px;
+}
+

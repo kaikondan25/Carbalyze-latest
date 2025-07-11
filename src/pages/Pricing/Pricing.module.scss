@@ -1,0 +1,207 @@
+.power {
+  background: #f8f1e9;
+  margin-top: 150px;
+
+  h6 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom: 20px;
+  }
+  .pertext {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+  }
+
+  .ampli {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+    .launch {
+      background: #fff;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 10px;
+
+      h5 {
+        background: #747a9d;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+      }
+
+      .fecttext {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 22px;
+        font-weight: 700;
+        color: #007c56;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .carbon {
+        padding: 32px;
+        p {
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 20px;
+          font-weight: 700;
+          color: black;
+        }
+
+        ul {
+          padding: 0;
+          li {
+            font-family: "Manufacturing Consent", system-ui;
+            font-size: 16px;
+            font-weight: 600;
+            list-style-type: none;
+            color: #364153;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .artext {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .demo{
+        text-align: center;
+        a {
+          background: #00a46d;
+          border-radius: 10px;
+          padding: 12px 24px;
+          text-decoration: none;
+          color: #fff;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+    }
+    .ascend {
+      background: #fff;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 10px;
+
+      h5 {
+        background: #747a9d;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+      }
+
+      .liftext {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 22px;
+        font-weight: 700;
+        color: #007c56;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .carbon {
+        padding: 32px;
+        p {
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 20px;
+          font-weight: 700;
+          color: black;
+        }
+
+        ul {
+          padding: 0;
+          li {
+            font-family: "Manufacturing Consent", system-ui;
+            font-size: 16px;
+            font-weight: 600;
+            list-style-type: none;
+            color: #364153;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .artext {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .demone {
+        text-align: center;
+        a {
+          border: 2px solid #00a46d;
+          border-radius: 10px;
+          padding: 12px 24px;
+          text-decoration: none;
+          color: black;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .price {
+    background: gray;
+    padding: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+
+    .vetext {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 16px;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .tertext {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      max-width: 650px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}

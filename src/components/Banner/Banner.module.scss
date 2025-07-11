@@ -1,0 +1,148 @@
+.mainBanner {
+  margin-top: 150px;
+  position: relative;
+
+  .titletext {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 26px;
+    font-weight: 700;
+    color: #007c56;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .paraone {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0abf7e;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .paratwo {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0abf7e;
+    text-align: center;
+  }
+
+  .card {
+    background: aliceblue;
+    width: 100%;
+    max-width: 1024px;
+    height: 160px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .mainbox {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 24px;
+
+    .boxone {
+      background-color: #007c56;
+      color: #ffffff;
+      padding: 0px 25px;
+    }
+    .boxtwo {
+      background-color: #007c56;
+      color: #ffffff;
+      padding: 0px 25px;
+    }
+  }
+  .parafour {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0abf7e;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.complie {
+  padding: 80px 16px;
+  .comptext {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .parafive {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .bothcards {
+    display: flex;
+    justify-content: space-around;
+    .cardone {
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      .prot {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .proto {
+          width: 56px;
+          height: 56px;
+        }
+        .certif {
+          width: 117px;
+          height: 36px;
+          margin-left: auto;
+        }
+      }
+
+      .parasix {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+
+    .cardtwo {
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      .protone {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .iso {
+          width: 56px;
+          height: 56px;
+        }
+        .certif {
+          width: 117px;
+          height: 36px;
+          margin-left: auto;
+        }
+      }
+
+      .paraseven {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+}

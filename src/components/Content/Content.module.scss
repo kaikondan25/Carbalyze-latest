@@ -1,0 +1,552 @@
+.caly {
+  h2 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .flipcard {
+    background-color: transparent;
+    height: 250px;
+    perspective: 1000px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .flipcardinner {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flipcard:hover .flipcardinner {
+    transform: rotateY(180deg);
+  }
+
+  .flipcardfront,
+  .flipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .flipcardfront {
+    background-color: #f0f0f0;
+    
+
+    h2 {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .tintext {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .tectext {
+      margin-top: 55px;
+    }
+    .eastext {
+      margin-top: 53px;
+    }
+  }
+
+  .flipcardback {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+}
+
+.manual {
+  margin-top: 150px;
+
+  h5 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .nabtext {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .sustain {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+
+    .stuck {
+      .consis {
+        width: 600px;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        .both {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        p {
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
+        .mismat {
+          background: #fef2f2;
+          padding: 10px 10px;
+
+          .mistext {
+            color: red;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .admin {
+      .grey {
+        background: grey;
+        padding: 20px 20px;
+        border-radius: 25px;
+        margin-bottom: 40px;
+        height: 115px;
+        width: 550px;
+
+        h6 {
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 26px;
+          font-weight: 700;
+          color: #ffffff;
+          margin: 0;
+          text-align: center;
+        }
+
+        p {
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 14px;
+          font-weight: 400;
+          color: #ffffff;
+          text-align: center;
+        }
+      }
+      .blank {
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 40px;
+        border-radius: 15px;
+        height: 402px;
+
+        .bom {
+          background: #ffffff;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          padding: 32px;
+
+          .boxblue {
+            background: skyblue;
+            max-width: 290px;
+            height: 40px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+          .blueone {
+            background: skyblue;
+            max-width: 290px;
+            height: 40px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.timeline {
+  $primary-color: #00b386;
+  $bg-color: #fdf6f0;
+  $content-bg: #ffffff;
+  $shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  $line-width: 4px;
+  $icon-size: 40px;
+
+  .timeline-container {
+    position: relative;
+    padding: 40px 20px;
+    background: $bg-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .timeline-line {
+      position: absolute;
+      width: $line-width;
+      background-color: $primary-color;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      max-width: 800px;
+      margin: 40px 0;
+      position: relative;
+      z-index: 2;
+
+      &.left {
+        flex-direction: row;
+      }
+
+      &.right {
+        flex-direction: row-reverse;
+      }
+
+      .timeline-icon {
+        width: $icon-size;
+        height: $icon-size;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin: 0 20px;
+        z-index: 3;
+      }
+
+      .timeline-content {
+        background-color: $content-bg;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        width: 100%;
+        max-width: 318px;
+      }
+    }
+  }
+}
+
+$bkg: #f2fefb;
+$card-bg: #ffffff;
+$primary: #00b386;
+$secondary: #6366f1;
+
+.bomSection {
+  background-color: $bkg;
+  padding: 60px 20px;
+}
+
+.bomWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  gap: 40px;
+}
+
+.left {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    color: #555;
+  }
+
+  .features {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+
+      .icon {
+        background-color: $card-bg;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.5rem;
+        margin-right: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      strong {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      p {
+        margin: 0;
+        color: #666;
+      }
+    }
+  }
+}
+
+.right {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+
+  .card {
+    background-color: $card-bg;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+
+    .metric {
+      margin-bottom: 24px;
+
+      .labelRow {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .percent {
+        color: $primary;
+      }
+
+      .progressBar {
+        background-color: #e6f5f0;
+        height: 8px;
+        border-radius: 5px;
+
+        .progressFill {
+          height: 100%;
+          background-color: $primary;
+          border-radius: 5px;
+          transition: width 0.5s ease;
+        }
+      }
+
+      .progressBarPurple {
+        background-color: #ede9fe;
+        height: 8px;
+        border-radius: 5px;
+
+        .progressFillPurple {
+          height: 100%;
+          background-color: $secondary;
+          border-radius: 5px;
+          transition: width 0.5s ease;
+        }
+      }
+    }
+
+    .letterMarkers {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 24px;
+      color: #aaa;
+      font-weight: bold;
+    }
+
+    .chartIcon {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: $primary;
+    }
+  }
+}
+
+ 
+.trust {
+  background: #2c5364;
+  padding: 96px 24px;
+
+  h5 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .manufact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+
+    .manuone {
+      box-shadow: 0 12px 33px rgba(0, 0, 19.6, 20.05);
+      border-radius: 15px;
+      padding: 32px;
+      max-width: 550px;
+      width: 100%;
+      height: 240px;
+      h6 {
+        font-family: "Manufacturing Consent", system-ui;
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+      ul {
+        padding: 0;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          list-style-type: none;
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 18px;
+          font-weight: 400;
+          color: #ffffff;
+          margin-bottom: 24px;
+
+          img {
+            width: 25px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .manutwo {
+      .innerone {
+        box-shadow: 0 12px 33px rgba(0, 0, 19.6, 20.05);
+        border-radius: 15px;
+        padding: 32px;
+        max-width: 550px;
+        margin-bottom: 50px;
+
+        h4 {
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 26px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+      }
+      .innertwo {
+        box-shadow: 0 12px 33px rgba(0, 0, 19.6, 20.05);
+        border-radius: 15px;
+        padding: 32px;
+        max-width: 550px;
+
+        h4 {
+          font-family: "Manufacturing Consent", system-ui;
+          font-size: 26px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+.ditch {
+  padding: 80px 16px;
+  .greyditch {
+    background: #747a9d;
+    max-width: 1152px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    h1 {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 48px;
+      font-weight: 900;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: "Manufacturing Consent", system-ui;
+      font-size: 20px;
+      font-weight: 600;
+      color: #4a4e69;
+      text-align: center;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      li {
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+      }
+    }
+
+    .btnbok {
+      a {
+        max-width: 160px;
+        width: 100%;
+        border: 2px solid #00a46d;
+        background: #ffffff;
+        padding: 12px 24px;
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+  }
+}
