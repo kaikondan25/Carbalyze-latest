@@ -41,11 +41,13 @@ function Content() {
           <div className={styles.flipcard}>
             <div className={styles.flipcardinner}>
               <div className={styles.flipcardfront}>
-                <img src={ai} alt="..." />
-                <h2>Fast, AI-Powered PCF Estimates</h2>
-                <p className={styles.tintext}>
-                  No more waiting weeks — Caly gets you results in minutes.
-                </p>
+                <div className={styles.content_section}>
+                  <img src={ai} alt="..." />
+                  <h2>Fast, AI-Powered PCF Estimates</h2>
+                  <p className={styles.tintext}>
+                    No more waiting weeks — Caly gets you results in minutes.
+                  </p>
+                </div>
               </div>
               <div className={styles.flipcardback}>
                 <h2>Back Side</h2>
@@ -56,11 +58,13 @@ function Content() {
           <div className={styles.flipcard}>
             <div className={styles.flipcardinner}>
               <div className={styles.flipcardfront}>
-                <img src={expert} alt="..." />
-                <h2>Built for Non-LCA Experts</h2>
-                <p className={styles.tectext}>
-                  No technical background needed. Caly speaks your language.
-                </p>
+                <div className={styles.content_section}>
+                  <img src={expert} alt="..." />
+                  <h2>Built for Non-LCA Experts</h2>
+                  <p className={styles.tectext}>
+                    No technical background needed. Caly speaks your language.
+                  </p>
+                </div>
               </div>
               <div className={styles.flipcardback}>
                 <h2>Back Side</h2>
@@ -71,11 +75,14 @@ function Content() {
           <div className={styles.flipcard}>
             <div className={styles.flipcardinner}>
               <div className={styles.flipcardfront}>
-                <img src={supplier} alt="..." />
-                <h2>Supplier-Friendly Workflow</h2>
-                <p className={styles.eastext}>
-                  Easily collect and verify Scope 3 data from your value chain.
-                </p>
+                <div className={styles.content_section}>
+                  <img src={supplier} alt="..." />
+                  <h2>Supplier-Friendly Workflow</h2>
+                  <p className={styles.eastext}>
+                    Easily collect and verify Scope 3 data from your value
+                    chain.
+                  </p>
+                </div>
               </div>
               <div className={styles.flipcardback}>
                 <h2>Back Side</h2>
@@ -86,12 +93,14 @@ function Content() {
           <div className={styles.flipcard}>
             <div className={styles.flipcardinner}>
               <div className={styles.flipcardfront}>
-                <img src={action} alt="..." />
-                <h2>Actionable Sustainability Intelligence</h2>
-                <p>
-                  Beyond carbon scores — Caly recommends ways to reduce
-                  emissions.
-                </p>
+                <div className={styles.content_section}>
+                  <img src={action} alt="..." />
+                  <h2>Actionable Sustainability Intelligence</h2>
+                  <p>
+                    Beyond carbon scores — Caly recommends ways to reduce
+                    emissions.
+                  </p>
+                </div>
               </div>
               <div className={styles.flipcardback}>
                 <h2>Back Side</h2>

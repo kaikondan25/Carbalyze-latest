@@ -2,8 +2,8 @@
 import React, { useRef, useEffect } from "react";
 
 const PARTICLE_COUNT = 80;
-const PARTICLE_COLOR = "#333";
-const LINE_COLOR = "rgba(160,160,160,0.5)";
+const PARTICLE_COLOR = "rgb(10, 191, 126)";
+const LINE_COLOR = "rgba(10, 191, 126, 0.4)";
 const BG_COLOR = "#fff";
 const PARTICLE_SIZE = { min: 1, max: 3 };
 const SPEED = 0.6;
